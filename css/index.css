@@ -1,0 +1,155 @@
+
+* {
+  box-sizing: border-box;
+}
+
+img{
+  user-select: none;                      /* NUpermite selectarea continutului divului*/
+  -webkit-user-select: none;
+}
+p{
+  text-indent: 2em;
+}
+
+body, html{
+  margin: 0;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container-fluid{
+  width:100%;
+}
+
+.container{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:10vh;
+}
+
+.content{
+  border: 2px solid #233962;
+  background-color: RGBA(35,57,98,0.9);
+}
+
+
+.wallpaper{
+  width: 100%;
+  border-bottom: 2px solid white;
+
+}
+
+.info
+{
+  padding: 15px;
+}
+
+.info p::first-letter{
+  weight: 400;
+  font-size: 1.4em;
+}
+
+.title{
+  text-align: center;
+}
+
+.info iframe{
+  margin: 0em 2em 1em 0em;
+  width: 50%;
+  height: 25em;
+  border-radius: 10px 10px 10px 10px
+}
+
+.info .left_img{
+  margin: 0em 1em 1em 0em;
+  display: inline-block;
+  width: 35%;
+  float: left;
+}
+
+.info .right_img{
+  margin: 0em 0em 1em 1em;
+  display: inline-block;
+  width: 32%;
+  float:right;
+}
+
+.left_img img, .right_img img{
+  width: 100%;
+}
+
+
+/* Incadrez totul de sub navbar intr un div cu inaltime fixa pentru a-i putea da o margine superioara
+astfel incat sa nu mai intre sub nabvar la scroll si sa creeze probleme cand am hover pe niste elem
+care intra sub navbar. Navul este fix si se pozitioneaza raportat la fereastra browser */
+
+/* .suport{
+  height: 91.5vh;
+  overflow-y: scroll;
+  margin-top:8.5vh;
+  scrollbar-width: none;
+}
+
+.suport::-webkit-scrollbar {
+    display: none;
+} */
+
+
+@media (min-width:768px) and (max-width:1279px) {
+  .info iframe{
+    width: 50%;
+    height: 15em;
+  }
+}
+
+@media(max-width: 767px){
+
+  .info iframe{
+    width: 100%;
+    height: 20em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p{
+    font-size: 1em;
+  }
+
+  .info .left_img{
+    width: 45%;
+  }
+
+  .info .right_img{
+    width: 42%;
+  }
+}
+
+
+@media(max-width: 441px){
+
+  .info iframe{
+    height: 10em;
+  }
+
+  p{
+    font-size: 0.9em;
+  }
+
+  .info .left_img{
+    width: 100%;
+  }
+
+  .info .right_img{
+    width: 100%;
+  }
+}
