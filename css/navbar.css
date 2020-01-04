@@ -11,6 +11,13 @@
   z-index:1;
 }
 
+
+.time{
+  color: white;
+  float: right;
+  padding-right:1em;
+}
+
 ul{
   list-style-type: none;
   padding-inline-start: 0em;
@@ -23,7 +30,7 @@ ul{
   border-bottom: 2px solid #233962;
 }
 
-.navbar .nav-header, .navbar .navbar-nav{
+.navbar .nav-header, .navbar .navbar-nav, .navbar .time{
   display: inline-block;
 
 }

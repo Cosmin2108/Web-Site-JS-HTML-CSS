@@ -32,7 +32,7 @@ var demoGallery = document.getElementById("demo-gallery");
 function leftDemo(){
   var x = demoGallery.scrollLeft;
 
-  if( x < 20){
+  if( x < 40){
       demoGallery.scroll({
         top: 0,
         left: 0,
@@ -42,7 +42,7 @@ function leftDemo(){
   else{
     demoGallery.scroll({
       top: 0,
-      left: x-20,
+      left: x-40,
       behavior: 'smooth'
     });
   }
@@ -52,7 +52,7 @@ function rightDemo(){
   var divWidth = demoGallery.scrollWidth;
   var x = demoGallery.scrollLeft;
 
-  if( x > divWidth - 20){
+  if( x > divWidth - 40){
     demoGallery.scroll({
       top: 0,
       left: divWidth,
@@ -62,7 +62,7 @@ function rightDemo(){
   else{
     demoGallery.scroll({
       top: 0,
-      left: x+20,
+      left: x+40,
       behavior: 'smooth'
     });
   }
