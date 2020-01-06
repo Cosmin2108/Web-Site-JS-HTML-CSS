@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/form.css">
     <link rel="shortcut icon" href="../images/favicon-c.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -54,16 +55,29 @@
             </div>
 
             <div class="info">
-                <form action="#" method="POST">
-                    <select name="cars">
-                      <option value="volvo">Volvo</option>
-                      <option value="saab">Saab</option>
-                      <option value="fiat">Fiat</option>
-                      <option value="audi">Audi</option>
-                    </select>
-                    <br><br>
-                    <button id="feedbackSubmit">Sent</button>
-                  </form>
+                <form action="#" method="POST" id="feedback">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name" placeholder="Enter your name">
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+                  <label for="description">Tell us your opinion:</label>
+                  <textarea name="description" id="description" cols="30" rows="10" placeholder="Type here"></textarea>
+                  <label for="rating">Rating:</label>
+                  <select name="rating">
+                    <option value="1">worst</option>
+                    <option value="2">acceptable</option>
+                    <option value="3">good</option>
+                    <option value="4">the best</option>
+                    <option value="5">excellent</option>
+                  </select>
+
+                  <br><br>
+                  <button id="feedbackSubmit">Submit</button>
+                </form>
+
+                <div class="comments" id="comments">
+                  <h2>What others are saying:</h2>
+                </div>
             </div>
         </div>
     </div>
