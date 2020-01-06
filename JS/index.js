@@ -15,8 +15,6 @@ else{
 
 var p_list = document.getElementsByClassName("change_letter");
 
-console.log("Pp", p_list.length);
-
 for(p of p_list){
   p.addEventListener("mouseover", change_color, true);
   p.addEventListener("mouseout", reset_color, true);
@@ -24,7 +22,7 @@ for(p of p_list){
 
 function change_color(p){
   for(p of p_list)
-    p.style.color = "green";
+    p.style.color = "#FFD700";
 }
 
 function reset_color(){

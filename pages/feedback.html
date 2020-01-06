@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../images/favicon-c.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tehnici Web</title>
+  </head>
+  <body>
+
+    <div class="container-fluid fixed" id="fixed">
+      <nav class="navbar nav-black ">
+        <div class="nav-header">
+          <a class="navbar-brand" href="#">COSMIN</a>
+        </div>
+
+        <ul class="navbar-nav">
+          <a href="../index.html"><li class="nav-item"> Home </li></a>
+          <li class="nav-item dropdown">
+            <a class="nav-item" href="#">About</a>
+
+            <ul class="dropdown-menu">
+              <a href="formation.html"> <li class="dropdown-item"> Formare </li></a>
+              <a href="evolution.html"> <li class="dropdown-item"> Evolutie </li></a>
+            </ul>
+          </li>
+          <a href="galery.html"><li class="nav-item"> Gallery </li></a>
+          <li class="nav-item dropdown">
+            <a class="nav-item" href="#">Theories</a>
+
+            <ul class="dropdown-menu">
+              <a href="big_bang.html"> <li class="dropdown-item"> Big-Bang </li></a>
+              <a href="q_phenomenon.html"> <li class="dropdown-item"> Fenomenul Q </li></a>
+              <a href="explosion.html"> <li class="dropdown-item"> Explozia unei stele 4D </li></a>
+            </ul>
+
+          </li>
+          <a href="#"><li class="nav-item active_li"> Your Feeedback </li></a>
+        </ul>
+
+        <div class = "time">
+          <p class = "currentTime"></p>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <img class="wallpaper" src="../images/wallpaper.png" />
+            </div>
+
+            <div class="info">
+                <form action="#" method="POST">
+                    <select name="cars">
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="fiat">Fiat</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <br><br>
+                    <button id="feedbackSubmit">Sent</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../JS/index.js"> </script>
+    <script type="text/javascript" src="../JS/form.js"> </script>
+  </body>
+</html>
