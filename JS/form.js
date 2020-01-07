@@ -4,9 +4,10 @@ window.onload = function(){
     var list = document.getElementById("comments")
 
     var myObj = {comments: [] }
-    
-    localStorage.setItem("comments", JSON.stringify(myObj))
+    if(!localStorage.getItem("comments"))
+        localStorage.setItem("comments", JSON.stringify(myObj))
 
+    show();
     btn.addEventListener("click", sent)
 
     function sent(event){
@@ -57,7 +58,7 @@ window.onload = function(){
 
             div.className = "comment"
             h.className = "person"
-            p.className = "content"
+            p.className = "message"
 
             h.innerHTML = myObj.comments[i].name
             p.innerHTML = myObj.comments[i].description
