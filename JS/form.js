@@ -16,7 +16,7 @@ window.onload = function(){
         document.getElementById("name").value = ""
         document.getElementById("email").value = ""
         document.getElementById("description").value = ""
-        console.log(formData)
+        ///console.log(formData)
         store(formData)
         post(formData)
     }
@@ -51,7 +51,7 @@ window.onload = function(){
     function show(){
 
         myObj = JSON.parse(localStorage.getItem("comments"))
-        for(var i = 0; i < myObj.comments.length; i++){
+        for(let i = 0; i < myObj.comments.length; i++){
             var div = document.createElement("div")
             var h = document.createElement("h3")
             var p = document.createElement("p")
@@ -69,5 +69,11 @@ window.onload = function(){
 
         }
     }
+
+    var useless = document.getElementsByClassName("content")[0];
+
+    var mda = window.getComputedStyle(useless, null).getPropertyValue("background-color");
+
+    alert("color is " + mda);
 
 }

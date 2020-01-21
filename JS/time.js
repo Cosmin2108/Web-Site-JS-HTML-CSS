@@ -7,9 +7,8 @@ window.onload = function(){
     function updateDate(x,y,z){
         var d = new Date;
         var t = d.toLocaleTimeString();
-        console.log(t);
-        console.log(tVal.length);
-
+        // console.log(t);
+        // console.log(tVal.length);
         tVal[0].innerHTML = "Time: " + t;
         tVal[0].style.color =  "rgb(" + x + ',' + y + ',' + z + ")";;
     }
